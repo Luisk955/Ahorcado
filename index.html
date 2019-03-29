@@ -112,7 +112,7 @@
           <div> 
 						<div className="form">
 							<h2>Adivina la palabra</h2>
-							<p>{(this.max - this.wrGuess.length)+1}</p>
+							<h3>Intentos: {(this.max - this.wrGuess.length)+1}</h3>
 							<input type="text" id="txtGuess" />
 							<button class="mt" onClick={this.readGuess}>Adivina</button>
 						</div>
@@ -133,42 +133,41 @@
 	</script>
 
 	<style>
-
-		.letter{
+		.letter {
 			width: 20px;
-   		margin-right: 20px;
+			margin-right: 20px;
 		}
 
-		.letter-p{
+		.letter-p {
 			color: transparent;
 		}
 
-		.letters{
+		.letters {
 			display: flex;
 			text-align: center;
 		}
 
-		.image-container{
+		.image-container {
 			width: 200px;
 			height: 200px;
 		}
-		.mt{
+
+		.mt {
 			margin-top: 20px;
 		}
 
-		.unsel{
-      user-select: none;
-      -moz-user-select: none;
-      -khtml-user-select: none;
-      -webkit-user-select: none;
-      -o-user-select: none;
+		.unsel {
+			user-select: none;
+			-moz-user-select: none;
+			-khtml-user-select: none;
+			-webkit-user-select: none;
+			-o-user-select: none;
 		}
 
-		hr{
+		hr {
 			width: 20px;
 			border: solid 1px black;
-		} 
-
+		}
 	</style>
 </body>
 
